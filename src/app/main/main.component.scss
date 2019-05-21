@@ -1,0 +1,16 @@
+
+
+.main-app-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // opacity: 0;
+
+  & .pokemon-container {
+
+
+    & h4 {
+      text-align: center;
+    }
+  }
+}

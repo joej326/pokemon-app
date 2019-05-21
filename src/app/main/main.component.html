@@ -1,0 +1,11 @@
+
+<div [@movePokemon]="animate ? 'enter' : 'exit'" class="main-app-container">
+  <ng-container *ngFor="let sprite of sprites; let i = index">
+    <div  class="pokemon-container">
+        <img [src]="sprite" alt="">
+        <h4>{{ names[i] | uppercase  }}</h4>
+        <p>{{ fetchedAbilities[i] | titlecase }}</p>
+    </div>
+  </ng-container>
+</div>
+
