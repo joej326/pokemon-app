@@ -12,9 +12,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
       // ...
       state('enter', style({
         opacity: 1,
+        left: '0vw'
       })),
       state('exit', style({
         opacity: 0,
+        left: '50vw'
       })),
       transition('enter => exit', [
         animate('5s')
