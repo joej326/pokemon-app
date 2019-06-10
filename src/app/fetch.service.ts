@@ -12,8 +12,8 @@ export class FetchService {
 
 
   fetchPokemon() {
-    const randomNum1 = Math.floor(Math.random() * 251);
-    const randomNum2 = Math.floor(Math.random() * 251);
+    const randomNum1 = Math.floor(Math.random() * 386);
+    const randomNum2 = Math.floor(Math.random() * 386);
     const pokemon1 = this.http.get(`https://pokeapi.co/api/v2/pokemon/${randomNum1}/`);
     const pokemon2 = this.http.get(`https://pokeapi.co/api/v2/pokemon/${randomNum2}/`);
 
